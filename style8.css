@@ -64,10 +64,11 @@ body {
 .button{
     width: 40%;
     height: 20%;
-    background-color: rgb(0, 255, 13);
+    background-color: rgb(248, 119, 119);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
 }
 .user{
     width: 50%;

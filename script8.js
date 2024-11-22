@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const up = document.getElementById("up");
     const bp = document.getElementById("bp");
     const winner = document.getElementById("winner");
-    const button = document.querySelector(".button");
+    const button = document.getElementById("button");
     let userName = "";
     let userScore = 0;
     let botScore = 0;
@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const checkWinner = () => {
         if (userScore === 3) {
             winner.innerHTML = 'Переможець:<br>' + userName;
-            button.removeEventListener("click", round);
+            button.disabled = true;
         } else if (botScore === 3) {
             winner.innerHTML = 'Переможець:<br>Bot';
-            button.removeEventListener("click", round);
+            button.disabled = true;
         }
     };
     const round = () => {
